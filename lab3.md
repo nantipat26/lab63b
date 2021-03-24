@@ -7,6 +7,7 @@
 1.microcontroller ESP-01
 2.USB serial port
 3.Adepterโดย port 0ต่อกับเส้นสีขาว
+4.คอมพิวเตอร์
 
 ##ศึกษาข้อมูลเบื้องต้น
 1.https://www.youtube.com/watch?v=CCnN1WJsXQY
