@@ -18,6 +18,7 @@ void setup()
 
 void loop()
 {
+	cnt++;
 	Serial.println("========== เริ่มต้นแสกนหา Wifi ===========");
 	int n = WiFi.scanNetworks();
 	if(n == 0) {
@@ -31,10 +32,11 @@ void loop()
 			Serial.print(WiFi.RSSI(i));
 			Serial.println(")");
 			Serial.print(WiFi.channel(i));
-			Serial.print(isHidden(i));
+			Serial.print(BSSID(i));
 			delay(10);
 		}
 	}
 	Serial.println("\n\n");
-	delay(10 * 1000);
-}
+	int c = cnt %4 + 9;
+	int s = c * 1000;
+	delay(s);
